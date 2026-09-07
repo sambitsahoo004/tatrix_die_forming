@@ -1,0 +1,382 @@
+1
+
+   Abaqus 2021                                  Date 22-Feb-2026   Time 13:54:32
+   For use by INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes SIMULIA Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine DESKTOP-MT3D9FF 
+                          you are authorized to run
+                          Abaqus/Standard until 18-Nov-2026
+
+                          Your site id is: 200000000029896 
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      http://www.3ds.com/products/simulia/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2021                       * 
+                *                                                         * 
+                *          BUILD ID: 2020_03_06-20.20.37 167380           * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2021 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *   This program may not be used for commercial purposes  * 
+                *           without payment of a commercial fee.          * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=C3D8R
+  *Nset, nset=ASSEMBLY_BLANK-1_SET-1
+  *Elset, elset=ASSEMBLY_BLANK-1_SET-1
+  *Node
+  *Nset, nset=ASSEMBLY_DIE-1_DIE-1-REFPT_
+  *Node
+  *Nset, nset=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_
+  *Nset, nset=ASSEMBLY_SET-1
+  *Nset, nset=ASSEMBLY_SET-2
+  *Nset, nset=ASSEMBLY_SET-3
+  *Nset, nset=ASSEMBLY_SET-4
+  *Elset, elset=ASSEMBLY_SET-3
+  *Elset, elset=ASSEMBLY_SET-4
+  *Elset, elset=ASSEMBLY__S_SURF-1_S3
+  *Elset, elset=ASSEMBLY__S_SURF-1_S4
+  *Elset, elset=ASSEMBLY__S_SURF-1_S6
+  *Elset, elset=ASSEMBLY__S_SURF-3_S2
+  *Elset, elset=ASSEMBLY__S_SURF-3_S4
+  *material, name=AL_KILLED_STEEL
+  *elastic
+  *plastic
+  *potential
+  *orientation, name=ASSEMBLY_BLANK-1_ORI-1
+  *solidsection, elset=ASSEMBLY_BLANK-1_SET-1, orientation=ASSEMBLY_BLANK-1_ORI-1, material=AL_KILLED_STEEL
+  *solidsection, elset=ASSEMBLY_BLANK-1_SET-1, orientation=ASSEMBLY_BLANK-1_ORI-1, material=AL_KILLED_STEEL
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *surface, type=REVOLUTION, name=ASSEMBLY_DIE-1_M_SURF-1
+  *surface, type=REVOLUTION, name=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *surface, type=REVOLUTION, name=ASSEMBLY_DIE-1_M_SURF-1
+  *surface, type=REVOLUTION, name=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *surface, type=REVOLUTION, name=ASSEMBLY_DIE-1_M_SURF-1
+  *surface, type=REVOLUTION, name=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *surfaceinteraction, name=INTPROP-1
+  *surfacebehavior, pressure-overclosure=HARD
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surfaceinteraction, name=INTPROP-1
+  *friction, sliptolerance=0.005
+  *surfacebehavior, pressure-overclosure=HARD
+  *surfaceinteraction, name=INTPROP-1
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***WARNING: PATH BASED TRACKING IS DEFINED IN CONTACT PAIR 
+             (ASSEMBLY_S_SURF-3,ASSEMBLY_PUNCH-1_M_SURF-3). PATH BASED TRACKING 
+             CANNOT BE USED WITH ANALYTICAL RIGID MASTER SURFACES, THE STATE 
+             BASED TRACKING ALGORITHM WILL BE USED INSTEAD.
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+
+ ***WARNING: PATH BASED TRACKING IS DEFINED IN CONTACT PAIR 
+             (ASSEMBLY_S_SURF-1,ASSEMBLY_DIE-1_M_SURF-1). PATH BASED TRACKING 
+             CANNOT BE USED WITH ANALYTICAL RIGID MASTER SURFACES, THE STATE 
+             BASED TRACKING ALGORITHM WILL BE USED INSTEAD.
+
+ ***WARNING: FOR CONTACT PAIR (ASSEMBLY_S_SURF-1-ASSEMBLY_DIE-1_M_SURF-1), 
+             ADJUSTMENT WAS SPECIFIED BUT NO NODE WAS ADJUSTED MORE THAN THE 
+             ADJUSTMENT DISTANCE = 2.22000E-16.
+  *surfaceinteraction, name=INTPROP-1
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE, adjust=0
+  *rigidbody, refnode=ASSEMBLY_DIE-1_DIE-1-REFPT_, analyticalsurface=ASSEMBLY_DIE-1_M_SURF-1
+  *rigidbody, refnode=ASSEMBLY_PUNCH-1_PUNCH-1-REFPT_, analyticalsurface=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surface, type=REVOLUTION, name=ASSEMBLY_DIE-1_M_SURF-1
+  *surface, type=REVOLUTION, name=ASSEMBLY_PUNCH-1_M_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  
+                               E L E M E N T   Q U A L I T Y  C H E C K S        
+  
+  
+ ***NOTES: DISTORTED ISOPARAMETRIC ELEMENTS: ANGLE BETWEEN ISOPARAMETRIC LINES 
+           IS LESS THAN 45 DEGREES OR GREATER THAN 135 DEGREES.
+  
+           TETRAHEDRAL QUALITY MEASURE: VOLUME OF TETRAHEDRON DIVIDED BY THE 
+           VOLUME OF EQUILATERAL TETRAHEDRON WITH SAME CIRCUMSPHERE RADIUS; 
+           0 FOR DEGENERATE TETRAHEDRON AND 1 FOR EQUILATERIAL TETRAHEDRON. IT 
+           IS RECOMMENDED THAT THE TETRAHEDRAL QUALITY MEASURE BE GREATER THAN 
+           0.02, THE MIN INTERIOR (DIHEDRAL) ANGLE BE GREATER THAN 10 DEGREES, 
+           AND THE MAX INTERIOR (DIHEDRAL) ANGLE BE LESS THAN 160 DEGREES. 
+  
+           MODIFIED TETRAHEDRAL QUALITY MEASURE: ANGLES BETWEEN THE TWO LINE 
+           SEGMENTS ON EACH EDGE; THE EDGES OF MODIFIED TETRAHEDRAL SHOULD BE 
+           AS STRAIGHT AS POSSIBLE. IT IS RECOMMENDED THAT THE ANGLE BETWEEN 
+           THE TWO LINE SEGMENTS ON EACH EDGE IS BETWEEN 160 AND 180 DEGREES. 
+  
+           TRIANGULAR QUALITY MEASURE: AREA OF TRIANGLE DIVIDED BY THE AREA OF 
+           EQUILATERAL TRIANGLE WITH SAME CIRCUMCIRCLE RADIUS; 0 FOR DEGENERATE 
+           TRIANGLE AND 1 FOR EQUILATERAL TRIANGLE. IT IS RECOMMENDED THAT THE
+           TRIANGULAR QUALITY MEASURE BE GREATER THAN 0.01, THE MIN INTERIOR 
+           ANGLE BE GREATER THAN 10 DEGREES, AND THE MAX INTERIOR ANGLE BE LESS 
+           THAN 160 DEGREES. 
+  
+           NODAL ADJUSTMENTS ARISING FROM CONTACT INTERACTIONS AND/OR TIE 
+           CONSTRAINTS CAN CAUSE SEVERE ELEMENT DISTORTION. IT MAY BE NECESSARY 
+           TO REMESH IN ORDER TO REDUCE THE AMOUNT OF ADJUSTMENT. 
+
+ ***WARNING: 27 elements are distorted. Either the isoparametric angles are out 
+             of the suggested limits or the triangular or tetrahedral quality 
+             measure is bad. The elements have been identified in element set 
+             WarnElemDistorted.
+  
+ --------------------------------------------------------------------------------
+ Distorted isoparametric elements
+  
+      Element       Min/max angle   Adjusted nodes 
+ ----------------- ---------------- -------------- 
+       BLANK-1.211          43.4499       NO       
+       BLANK-1.212          42.0176       NO       
+       BLANK-1.213          43.7527       NO       
+       BLANK-1.226          39.8684       NO       
+       BLANK-1.227          40.8909       NO       
+       BLANK-1.228          43.8963       NO       
+       BLANK-1.241          34.0467       NO       
+       BLANK-1.242          40.5542       NO       
+       BLANK-1.243          44.6032       NO       
+       BLANK-1.700          43.9458       NO       
+       BLANK-1.701          43.8613       NO       
+       BLANK-1.702          44.0736       NO       
+       BLANK-1.703          44.2602       NO       
+       BLANK-1.704          44.7413       NO       
+       BLANK-1.705          44.7409       NO       
+       BLANK-1.730          43.0572       NO       
+       BLANK-1.731          44.1149       NO       
+       BLANK-1.732          41.7287       NO       
+       BLANK-1.733          42.8659       NO       
+       BLANK-1.734          40.9021       NO       
+       BLANK-1.735           41.469       NO       
+       BLANK-1.760          44.0548       NO       
+       BLANK-1.761            44.81       NO       
+       BLANK-1.762          40.3306       NO       
+       BLANK-1.763          41.1901       NO       
+       BLANK-1.764          33.7332       NO       
+       BLANK-1.765          34.7193       NO       
+  
+  
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *static
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *endstep
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *static
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                 12707
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE        3465
+          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT      9240
+          NUMBER OF NODES IS                                    23350
+          NUMBER OF NODES DEFINED BY THE USER                    4870
+          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM     18480
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                42336
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.20000    
+       SYSTEM TIME (SEC)    =   0.0000    
+       TOTAL CPU TIME (SEC) =  0.20000    
+       WALLCLOCK TIME (SEC) =          1
+1
+
+   Abaqus 2021                                  Date 22-Feb-2026   Time 13:54:36
+   For use by INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR under license from Dassault Systemes or its subsidiary.
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     S T A T I C   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                1.000E-03
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-05
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                 1.00    
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1          1.64E+09               33                 96
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH      4 WARNING MESSAGES ON THE DAT FILE
+                              AND     124 WARNING MESSAGES ON THE MSG FILE
+                                        5 WARNINGS ARE FOR NEGATIVE EIGENVALUES
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   1365.5    
+       SYSTEM TIME (SEC)    =   10.000    
+       TOTAL CPU TIME (SEC) =   1375.5    
+       WALLCLOCK TIME (SEC) =       1451
